@@ -1,10 +1,32 @@
-package Tema1;
+package Procesos;
 
-public class repaso {
+import java.io.IOException;
+
+public class Prueba_Proceso {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
+		
+		ProcessBuilder proceso = new ProcessBuilder("notepad.exe");
+		
+		try {
+			proceso.start();			
+		} catch (IOException e) {
+			System.out.println("Error");
+			e.printStackTrace();
+		}
+		/*
+		
+		int a = 3, b = 5;
+		
+		int suma = 0;
+		
+		for (int i = a; i <= b; i++) {
+			suma+= i;
+		}
+		
+		System.out.println(suma);
+		*/
 	}
 
 }
